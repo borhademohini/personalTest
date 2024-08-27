@@ -1,0 +1,30 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Button</title> 
+    <style>
+        button {
+            width: 96px;
+            height: 48px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id='btn'>0</button>
+    <script type="text/javascript">
+        let button = document.getElementById('btn');
+        console.log("button :: ", button)
+        let count = 0;
+        button.addEventListener("click", (e) => {
+            count += 1;
+            button.innerText = count;
+        })
+    </script>
+</body>
+
+</html>
